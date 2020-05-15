@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+  /*font-family: 'M PLUS Rounded 1c', sans-serif;*/
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+  padding: 0px 20px 0px 20px;
+}
+
+.top-wrapper {
+  text-align: center;
+  color: maroon;
+  background-image: url(output_.jpg);
+  background-size: cover;
+  padding: 150px 0px 150px 0px;
+  background-color: cornsilk;
+}
+
+.top-copy h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+ .bold {
+  font-size: 70px;
+  colro: red;
+}
+
+.top-copy p {
+  opacity: 0.6;
+  line-height: 15px;
+}
+
+header {
+  height: 65px;
+  background-color: maroon;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+}
+
+.header-left {
+  float: left;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  line-height: 65px;
+}
+
+.header-right {
+  float: right;
+  line-height: 65px;
+}
+
+.sign {
+  color: white;
+  display: inline-block;
+  height: 65px;
+  padding: 0px 15px 0px 15px;
+}
+
+.fas {
+  color: white;
+  line-height: 65px;
+  font-size: 20px;
+  margin-right: 10px;
+  display: none;
+}
+
+.signup {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.signup:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.signin {
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.signin:hover {
+  font-size: 150%;
+}
+
+.calcu-wrapper {
+  text-align: center;
+  background-color: ghostwhite;
+  padding: 100px 0px;
+}
+
+.calcu-exp {
+  font-weight: normal;
+  color: maroon;
+}
+
+.re {
+  display: none;
+}
+
+.calcu-contents {
+  text-align: center;
+  margin: 80px 20% 50px 20%;
+  display: flex;
+}
+
+.content {
+  float: left;
+  width: 50%;
+  flex: auto;
+}
+
+.txt {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.calcu-answer {
+  margin: 70px 0px 100px 0px;
+}
+
+.btn {
+  opacity: 0.8;
+  color: white;
+  font-size: 12px;
+  border: none;
+  box-shadow: 0px 7px #333;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.go{
+  background-color: deepskyblue;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.go:active {
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+}
+
+.calcu-answer {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+
+footer {
+  height: 80px;
+  background-color: maroon;
+  text-align: center;
+}
+
+.footer-left {
+  color: white;
+  line-height: 80px;
+  float: left;
+}
+
+.footer-right {
+  float: right;
+}
+
+.form {
+  color: maroon;
+  margin-top: 18px;
+  display: inline-block;
+  padding: 10px;
+  background-color: white;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.form:hover {
+  opacity: 1;
+}
+
+.far {
+  margin-right: 3px;
+}
+
+@media (max-width: 670px) {
+  .sign {
+    display: none;
+  }
+
+  .fas {
+    display: inline;
+  }
+
+  .top-copy h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  .bold {
+    font-size: 60px;
+  }
+
+  .top-copy p {
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  .calcu-wrapper {
+    padding: 50px 0px;
+  }
+
+  .calcu-exp {
+    line-height: 40px;
+    font-size: 20px;
+  }
+
+  .re {
+    display: inline;
+  }
+
+  .calcu-contents {
+    flex-direction: column;
+    margin: 30px 0px;
+  }
+
+  .content {
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+  .calcu-answer {
+    margin-bottom: 50px;
+  }
+}
